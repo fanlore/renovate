@@ -35,6 +35,11 @@ img {
 }
 
 /* Импорт стилей шапки */
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .navbar-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -98,6 +103,17 @@ img {
   }
   .navbar__logo {
     width: 90px;
+  }
+}
+
+@media (max-width: 567px) {
+  .navbar__logo {
+    margin-left: 22px;
+  }
+  .navbar__button {
+    margin-left: 10px;
+    margin-right: 22px;
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

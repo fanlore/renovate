@@ -1,4 +1,6 @@
 .navbar {
+    padding-top:20px;
+    padding-bottom:20px;
     &-block {
         display: flex;
         justify-content: space-between;
@@ -37,6 +39,18 @@
         }
         &__logo {
             width: 90px;
+        }
+    }
+}
+@media(max-width:567px) {
+    .navbar {
+        &__logo {
+            margin-left: 22px;
+        }
+        &__button {
+            margin-left:10px;
+            margin-right:22px;
+            font-size:10px;
         }
     }
 }
