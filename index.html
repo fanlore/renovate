@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ремонт квартир</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -71,7 +72,7 @@
         </section>
         <!-- /.hero -->
 
-        <section class="offer section">
+        <section class="section offer">
             <div class="container">
                 <div class="offer-block">
                     <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект вашего жилья и реализуем его</h2>
@@ -88,6 +89,27 @@
             <!-- /.container -->
         </section>
         <!-- /.offer -->
+        
+        <section class="section portfolio">
+            <div class="container">
+                <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремнотов в квартирах и домах</h2>
+                <div class="slider">
+                    <div class="slider__item"><img class="slider__image" src="img/room-examples/1.jpg" alt=""></div>
+                    <div class="slider__item"><img class="slider__image" src="img/room-examples/2.jpg" alt=""></div>
+                    <div class="slider__item"><img class="slider__image" src="img/room-examples/3.jpg" alt=""></div>
+                    <div class="slider__item"><img class="slider__image" src="img/room-examples/1.jpg" alt=""></div>
+                    <div class="slider__item"><img class="slider__image" src="img/room-examples/2.jpg" alt=""></div>
+                    <div class="slider__item"><img class="slider__image" src="img/room-examples/3.jpg" alt=""></div>
+                </div>
+                <div class="arrows portfolio__arrows">
+                    <div class="arrows__left"><img src="img/left-arrow.png" alt="arrow-left"></div>
+                    <div class="arrows__right"><img src="img/right-arrow.png" alt="arrow-right"></div>
+                </div>
+                 <!-- /.slider -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.portfolio -->
     </main>
     <!-- /.main -->
 
@@ -102,5 +124,32 @@
     
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow:3,
+                slidesToScroll:1,
+                prevArrow: $('.arrows__left'),
+                nextArrow: $('.arrows__right'),
+                responsive: [
+                    {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow:2,
+                        slidesToScroll:1,
+                    }
+                    },
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow:1,
+                        slidesToScroll:1,
+                    }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 </html>
