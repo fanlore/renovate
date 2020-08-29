@@ -9,3 +9,22 @@
         letter-spacing: -1px;
     }
 }
+@media(max-width:1200px) {
+    
+}
+@media(max-width:768px) {
+    .aviz {
+        &__description {
+            font-size: 24px;
+        }
+    }
+}
+@media(max-width:567px) {
+    .aviz {
+
+        &__description {
+            font-size: 20px;
+            line-height: 1.1;
+        }
+    }
+}
