@@ -50,7 +50,8 @@
 @media(max-width:768px) {
     .features__decoration {
         &:before {
-            display: none;
+            transform:rotate(-18deg);
+            top:90px;
         }
 }
 }
@@ -66,7 +67,9 @@
         } 
         &__decoration {
             &:before {
+                display:block;
                 transform:rotate(-14deg);
+                top:95px;
             }
         }
     }
