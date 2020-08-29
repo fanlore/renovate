@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+* {
+    flex-shrink: 0;
+}
 body {
     font-family: sans-serif;
     @include reg;
@@ -11,6 +14,9 @@ img {
 .container {
     width: 1170px;
     margin:auto;
+}
+strong {
+    font-weight: bold;
 }
 .button {
     border-radius:10px;

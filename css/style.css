@@ -20,6 +20,12 @@
           box-sizing: border-box;
 }
 
+* {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
 body {
   font-family: sans-serif;
   font-family: 'Museo Sans 300 Light', sans-serif;
@@ -33,6 +39,10 @@ img {
 .container {
   width: 1170px;
   margin: auto;
+}
+
+strong {
+  font-weight: bold;
 }
 
 .button {
@@ -721,6 +731,96 @@ img {
   .aviz__description {
     font-size: 20px;
     line-height: 1.1;
+  }
+}
+
+/* Стили секции features */
+.features__cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.features__item {
+  -webkit-flex-basis: 32%;
+      -ms-flex-preferred-size: 32%;
+          flex-basis: 32%;
+  background-color: #F7F7F7;
+  overflow: hidden;
+}
+
+.features__image {
+  width: 100%;
+  max-height: 300px;
+  position: relative;
+  display: block;
+}
+
+.features__decoration {
+  position: relative;
+}
+
+.features__decoration:before {
+  content: "";
+  position: absolute;
+  background-color: #ffd200;
+  left: -30px;
+  top: 98px;
+  width: 116%;
+  height: 35px;
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.features__description {
+  padding-left: 22px;
+  padding-top: 11px;
+  padding-right: 20px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .features__item {
+    -webkit-flex-basis: 49%;
+        -ms-flex-preferred-size: 49%;
+            flex-basis: 49%;
+  }
+  .features__item:last-child {
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features__decoration:before {
+    display: none;
+  }
+}
+
+@media (max-width: 567px) {
+  .features__item {
+    -webkit-flex-basis: 90%;
+        -ms-flex-preferred-size: 90%;
+            flex-basis: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+  .features__item:last-child {
+    margin-top: 0;
+  }
+  .features__decoration:before {
+    -webkit-transform: rotate(-14deg);
+        -ms-transform: rotate(-14deg);
+            transform: rotate(-14deg);
   }
 }
 
