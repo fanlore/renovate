@@ -5,17 +5,24 @@
 /* Стили шапки */
 @import 'blocks/navbar';
 
-/* Стили секции hero*/
+/* Стили секции hero */
 @import 'blocks/hero';
 
-/* Стили секции offer*/
+/* Стили секции offer */
 @import 'blocks/offer';
 
-/* Стили секции portfolio*/
+/* Стили секции portfolio */
 @import 'blocks/portfolio';
 
-/* Стили секции price*/
+/* Стили секции price */
 @import 'blocks/price';
 
-/* Стили модального окна*/
+/* Стили секции steps */
+@import 'blocks/steps';
+
+/* Стили секции aviz */
+@import 'blocks/aviz';
+
+
+/* Стили модального окна */
 @import 'blocks/modal';
